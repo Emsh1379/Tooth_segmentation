@@ -31,15 +31,15 @@ The model was deployed using Flask and TensorFlow Serving. Flask was used to cre
 ## How to Run
 1. Clone the repository
     ```bash
-    git clone https://github.com/rahmatmamat1/unet_lung_segmentation.git
+    git clone https://github.com/Emsh1379/Tooth_segmentation.git
     ```
 2. Download and save model
 
     If you already install Kaggle API, run this:
     ```bash
-    kaggle kernels output rahmatsyahfirdaus/u-net-lung-segmentation -p /path/to/dest
+    kaggle kernels output https://www.kaggle.com/code/mohammademadsharifi/tooth-segmentation -p /path/to/dest
     ```
-    or you can just download it at original kaggle notebook [here](https://www.kaggle.com/code/rahmatsyahfirdaus/u-net-lung-segmentation/notebook).
+    or you can just download it at original kaggle notebook [here](https://www.kaggle.com/code/mohammademadsharifi/tooth-segmentation/notebook).
 
     Run `save-test-model.ipynb` to save model so it can be serve using tensorflow serving.
 3. Build docker image for service and model server
