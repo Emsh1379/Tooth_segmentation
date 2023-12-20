@@ -12,21 +12,10 @@ Data can be seen at the following link.
 * https://www.kaggle.com/datasets/truthisneverlinear/childrens-dental-panoramic-radiographs-dataset/data
 
 ## Methodology
-The U-Net architecture improved by was chosen for this project due to its success in image segmentation tasks.
+The U-Net architecture improved by Generative was chosen for this project due to its success in image segmentation tasks.
 
 ## Deployment
-The model was deployed using Flask and TensorFlow Serving. Flask was used to create a web service, while TensorFlow Serving was used to serve the model as a API.
+The model was deployed using Flask and TensorFlow Serving. Flask was used to create a web service, while TensorFlow Serving was used to serve the model as an API.
 
-## Files
-* `Pipfile` and `Pipfile.lock` : library requirement for deployment
-* `u-net-lung-segmentation.ipynb` : Notebook file contains EDA and Modeling, originally from kaggle [notebook](https://www.kaggle.com/code/mohammademadsharifi/tooth-segmentation)
-* `save-test-model.ipynb` : Notebook file to save and test TensorFlow Serving
-* `gateway.py` : python script for serving ML models using Flask
-* `proto.py` : python script for convert np tp protobuf
-* `test.py` : python script to send a request to the API
-* `image-gateway.dockerfile` : Docker file build service container
-* `image-model.dockerfile` : Docker file to build model server container
-* `docker-compose.yaml` : to run service and model server container
 
-## How to Run
 
